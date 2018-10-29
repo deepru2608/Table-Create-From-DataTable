@@ -1,2 +1,2 @@
-# Table-Create-From-DataTable
+# Create DataTable
 How to Create Table and Add Rows in table in C#
