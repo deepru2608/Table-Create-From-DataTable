@@ -1,0 +1,40 @@
+using System.Data;
+
+[First Way to create table in C#]
+
+For Creating Table
+---------------------------
+DataTable dt = new DataTable();
+dt.Columns.Add("Column_Name");
+"   "   "   "
+"   "   "   "
+
+
+Add Data in table
+------------------------------
+DataRow row = dt.NewRow();
+row["Booking_Dates"] = DataSource;                (DataSource means which data you want to insert in row or columns)
+"   "   "   "
+"   "   "   "
+dt.Rows.Add(row);
+
+
+[Second Way to create table in C#]
+
+For Creating Table
+--------------------------------------
+DataTable dt = new DataTable();
+dt.Columns.AddRange(new DataColumn[4] { new DataColumn("Column_Name"), new DataColumn("Column_Name"), _ _ _ _ _ _etc });
+
+------------------------------------
+Add Data in table
+dt.Rows.Add("Column Data", "Column Data" _ _ _ _ _ _ etc);      (Column Data should be in a same way in which you have declared Column_Name)
+
+
+[Now your table is create and do whatever you want to do with table]
+[This is my First Repository so please share your feedback]
+
+Thanks
+Deepanshu
+
+
